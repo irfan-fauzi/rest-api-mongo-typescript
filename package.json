@@ -8,6 +8,11 @@
     "dev": "npx nodemon",
     "build": "tsc"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "author": "irfan",
   "license": "ISC",
   "devDependencies": {
@@ -22,6 +27,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-standard": "^5.0.0",
+    "husky": "^9.0.10",
+    "pretty-quick": "^4.0.0",
     "ts-node": "^10.9.2",
     "typescript": "*"
   },
